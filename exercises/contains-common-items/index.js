@@ -8,7 +8,7 @@
 // const array2 = ["z", "y", "x"];
 // should return true;
 
-// Time O(n + m)
+// Time O(n * m)
 // Space space O(1)
 const containsCommonItems = (arr1, arr2) => {
   if (!arr1 || !arr2) return false;
@@ -23,7 +23,7 @@ const containsCommonItems = (arr1, arr2) => {
 };
 
 // Time O(n + m)
-// Space O(1)
+// Space O(n)
 const containsCommonItems2 = (arr1, arr2) => {
   if (!arr1 || !arr2) return false;
 
