@@ -12,7 +12,7 @@
 
 // Time O(n)
 // SPace O(1)
-const moveZeroes = (nums) => {
+export const moveZeroes = (nums) => {
   let left = 0;
 
   for (let right = 0; right < nums.length; right++) {

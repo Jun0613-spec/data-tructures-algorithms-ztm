@@ -21,7 +21,7 @@
 
 // Time O(n)^2
 // Space O(1)
-const containsDuplicate = (nums) => {
+export const containsDuplicate = (nums) => {
   if (!nums || nums.length === 1) return false;
 
   for (let i = 0; i < nums.length; i++) {
@@ -35,7 +35,7 @@ const containsDuplicate = (nums) => {
 
 // Time O(n)
 // Space O(n)
-const containsDuplicate2 = (nums) => {
+export const containsDuplicate2 = (nums) => {
   if (!nums || nums.length === 1) return false;
 
   const set = new Set();
@@ -51,7 +51,7 @@ const containsDuplicate2 = (nums) => {
 
 // Time O(n)
 // Space O(n)
-const containsDuplicate3 = (nums) => {
+export const containsDuplicate3 = (nums) => {
   if (!nums || nums.length === 1) return false;
 
   const set = new Set(nums);
