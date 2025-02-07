@@ -18,7 +18,7 @@
 // Output: 23
 // Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
-// Time O(n)
+// Time O(n)^2
 // Space O(1)
 const maxSubArray = (nums) => {
   let maxSum = nums[0];
