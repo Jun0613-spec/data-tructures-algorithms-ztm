@@ -20,28 +20,18 @@
 
 // Time O(n)
 // Space O(1)
-const climbStairs = (n) => {
-  if (n <= 2) return n;
+export const climbStairs = (n) => {
+  if (n <= 0) return 0;
+  if (n <= 3) return n;
 
-  let prev2 = 1, // The number of ways to reach the 0th step
-    prev1 = 2; // The number of ways to reach the 1st step
+  let prev = 1,
+    curr = 2;
 
   for (let i = 3; i <= n; i++) {
-    const curr = prev1 + prev2;
-    prev2 = prev1;
-    prev1 = curr;
+    let next = prev + curr;
+    prev = curr;
+    curr = next;
   }
 
-  return prev1;
+  return curr;
 };
-
-let n;
-
-n = 2;
-console.log(climbStairs(n)); // Output 2
-
-n = 3;
-console.log(climbStairs(n)); // Output 3
-
-n = 4;
-console.log(climbStairs(n)); // Output: 5
