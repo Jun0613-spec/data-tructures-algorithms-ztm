@@ -19,8 +19,8 @@ export class ListNode {
   }
 }
 
-// Time O()
-// Space O()
+// Time O(n)
+// Space O(1)
 export const isPalindrome = (head) => {
   let slow = head;
   let fast = head;
